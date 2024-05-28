@@ -97,7 +97,6 @@ main .order ol li .img {height: 70px; width: 70px;}
 main .order ol li .img img {}
 nav {
     background-color: #fff;
-    box-shadow: 0, -4px, 4px, rgb(0, 0, 0, 0.5);
     padding: 10px 16px;
     display: flex;   
     justify-content: space-between;
