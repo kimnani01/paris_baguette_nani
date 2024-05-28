@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1><a href="#"><img src="./images/logo_001.png" alt="파리바게트"></a></h1>
+        <h1><a href="./index.html"><img src="./images/logo_001.png" alt="파리바게트"></a></h1>
         <div class="gnb">
             <a href="#">회사소개</a>
             <a href="#">PB MAGAZINE</a>
@@ -31,9 +31,11 @@
                         <dt>* 이름</dt>
                         <dd><input type="text" name="user_name" id="user_name" required></dd>
                         <dt>* 휴대폰번호</dt>
-                        <dd><input type="text" name="user_phone1" id="user_phone1" required></dd>
-                        <dd><input type="text" name="user_phone2" id="user_phone2" required></dd>
-                        <dd><input type="text" name="user_phone3" id="user_phone3" required></dd>
+                        <dd>
+                            <input type="text" name="user_phone1" id="user_phone1" required>
+                            <input type="text" name="user_phone2" id="user_phone2" required>
+                            <input type="text" name="user_phone3" id="user_phone3" required>
+                        </dd>
                         <dt>* 이메일</dt>
                         <dd>
                             <input type="text" name="user_mail" id="user_mail" required>
@@ -51,21 +53,22 @@
                         <dd><input type="text" name="user_region" id="user_region"></dd>
                         <dt>신청계기</dt>
                         <dd>
-                            <input type="radio" name="internet" id="internet">
+                            <input type="radio" name="meter" id="internet">
                             <label for="internet">인터넷 검색</label>
-                            <input type="radio" name="visit" id="visit">
+                            <input type="radio" name="meter" id="visit">
                             <label for="visit">매장 방문</label>
-                            <input type="radio" name="introduction" id="introduction">
+                            <input type="radio" name="meter" id="introduction">
                             <label for="introduction">지인 소개</label>
-                            <input type="radio" name="consulting" id="consulting">
+                            <input type="radio" name="meter" id="consulting">
                             <label for="consulting">컨설팅/부동산</label>
-                            <input type="radio" name="etc" id="etc">
+                            <input type="radio" name="meter" id="etc">
                             <label for="etc">기타</label>
                         </dd>
                         <dt>* 제목</dt>
                         <dd><input type="text" name="user_title" id="user_title" required></dd>
                         <dt>* 내용</dt>
-                        <dd><input type="text" name="user_detail" id="user_detail" required></dd>
+                        <dd><textarea name="user_detail" id="user_detail" cols="30" rows="10" required></textarea></dd>
+                        
                     </dl>
                     <p>
                         <button type="submit" id="request">상담 신청하기</button>
@@ -73,11 +76,11 @@
                 </fieldset>
             </form>
         </section>
-        <nav>
-            <a href="./index.html"><img src="./images/store.png" alt=""><span>매장소개</span></a>
-            <a href="#"><img src="./images/comments.png" alt=""><span>상담신청</span></a>
-            <a href="#"><img src="./images/truck.png" alt=""><span>배송서비스</span></a>
-            <a href="#"><img src="./images/percent.png" alt=""><span>프로모션</span></a>
-        </nav>
     </main>
+    <nav>
+        <a href="./index.html"><img src="./images/store.png" alt=""><span>매장소개</span></a>
+        <a href="#"><img src="./images/comments.png" alt=""><span>상담신청</span></a>
+        <a href="#"><img src="./images/truck.png" alt=""><span>배송서비스</span></a>
+        <a href="#"><img src="./images/percent.png" alt=""><span>프로모션</span></a>
+    </nav>
 </body>

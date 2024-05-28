@@ -93,13 +93,13 @@ main .order ol li p {
     color: #fff; font-weight: 600;
     text-align: center; line-height: 1.4;
 }
-main .order ol li .img {}
+main .order ol li .img {height: 70px; width: 70px;}
 main .order ol li .img img {}
 nav {
     background-color: #fff;
     box-shadow: 0, -4px, 4px, rgb(0, 0, 0, 0.5);
     padding: 10px 16px;
-    display: flex;
+    display: flex;   
     justify-content: space-between;
     align-items: center;
 }
@@ -121,7 +121,7 @@ nav a span {
 
 /* request */
 main .consultation {
-    margin: 24px 16px;
+    margin: 0 16px;
 }
 main .consultation h1 {
     font-size: 1.625rem; font-weight: 700;
@@ -140,26 +140,67 @@ main .consultation #consulting_frm .user_info dl dt {
     margin-bottom: 10px;
 }
 main .consultation #consulting_frm .user_info dl dd {
-    font-size: 0.875rem; width: 389px;
+    font-size: 0.875rem; width: 398px;
     margin-bottom: 16px;
+}
+main .consultation #consulting_frm .user_info dl dd:last-child{
+    margin: 0;
 }
 main .consultation #consulting_frm .user_info dl dd input[name^=user] {
     width: 100%; line-height: 40px;
     border-radius: 10px;
+    border: 1px solid #000;
 }
-main .consultation #consulting_frm .user_info dl  dd input[name^=phone] {}
-main .consultation #consulting_frm .user_info dl  dd input[name^=phone] {}
+main .consultation #consulting_frm .user_info dl dd:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+}
+main .consultation #consulting_frm .user_info dl dd #user_phone1 {width: 106px;}
+main .consultation #consulting_frm .user_info dl dd #user_phone2, 
+main .consultation #consulting_frm .user_info dl dd #user_phone3 {
+    width: 136px;
+}
 main .consultation #consulting_frm .user_info dl dd input[name=user_mail] {
     width: 182px;
 }
 main .consultation #consulting_frm .user_info dl dd span {
-    font-size: 0.875rem; margin: 0 0px;
+    font-size: 0.875rem; margin: 0 7px;
 }
 main .consultation #consulting_frm .user_info dl dd select {
     width: 182px;
     height: 40px; border-radius: 10px;
+    border: 1px solid #000;
 }
 main .consultation #consulting_frm .user_info dl dd select option {}
-main .consultation #consulting_frm .user_info dl dd input[type=radio] {}
-main .consultation #consulting_frm .user_info p {}
-main .consultation #consulting_frm .user_info p button {}
+main .consultation #consulting_frm .user_info dl dd input[type=radio] {
+    appearance: none;
+}
+main .consultation #consulting_frm .user_info dl dd label {
+    background-image: url(../images/unchecked.svg);
+    background-repeat: no-repeat;
+    background-position: 3px 13px;
+    background-size: 14px;
+    padding-left: 19px;
+    line-height: 40px;
+}
+main .consultation #consulting_frm .user_info dl dd:nth-of-type(5) {
+    display: flex;
+    justify-content: space-between;
+    
+}
+main .consultation #consulting_frm .user_info dl dd input[type=radio]:checked + label {
+    background-image: url(../images/checked.svg);
+}
+main .consultation #consulting_frm .user_info dl dd textarea {
+    width: 398px; border-radius: 10px;
+    border: 1px solid #000;
+}
+main .consultation #consulting_frm .user_info p {
+    margin-top: 40px;
+}
+main .consultation #consulting_frm .user_info p button {
+    font-size: 1.25rem; color: #fff;
+    background-color: #023586;
+    border-radius: 10px; border: 0;
+    width: 395px; line-height: 49px;
+}
