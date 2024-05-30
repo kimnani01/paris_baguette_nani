@@ -93,7 +93,10 @@ main .order ol li p {
     color: #fff; font-weight: 600;
     text-align: center; line-height: 1.4;
 }
-main .order ol li .img {height: 70px; width: 70px;}
+main .order ol li .img {
+    background-color: #fff;
+    height: 70px; width: 70px;
+}
 main .order ol li .img img {}
 nav {
     background-color: #fff;
